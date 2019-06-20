@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Collection</title>
+</head>
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color:cadetblue;
+  padding: 20px 10px;
+  background-image: url("https://i.pinimg.com/originals/bd/36/a7/bd36a7901a913f93c4e402ae6f52f126.jpg");
+}
+
+.header a {
+  float: left;
+  color: #e8ebef;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #464647;
+  color: rgb(253, 250, 250);
+}
+
+
+.header-right {
+  position: relative;
+  float: right;
+}
+
+.header1{
+    background-color: darksalmon;
+    border:1px solid black;
+    height:80px;
+    width: 250px;
+    color:darkslategray;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas: 
+  "singer-header ." 
+  "david-collection david-collection"
+  "singer-header2 ."
+  "bb-collection bb-collection"
+  "singer-header3 ."
+  "od-collection od-collection";
+}
+
+.singer-header{
+  grid-area: singer-header;
+  background-color: aqua;
+  width: 150px;
+  height:50px;
+  margin: 20px;
+  border-radius: 40px;
+  border:1px solid black;
+  padding: 20px;
+}
+
+.singer-header2{
+  grid-area: singer-header2;
+  background-color: aqua;
+  width: 180px;
+  height:50px;
+  margin: 20px;
+  border-radius: 40px;
+  border:1px solid black;
+  padding: 20px;
+}
+
+.singer-header3{
+  grid-area: singer-header3;
+  background-color: aqua;
+  width: 180px;
+  height:50px;
+  margin: 20px;
+  border-radius: 40px;
+  border:1px solid black;
+  padding: 20px;
+}
+
+.david-collection{
+  grid-area:david-collection;
+  display: flex;
+  flex-direction: row;
+  height: 210px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image: url("https://picserio.com/data/out/90/plain-black-wallpapers-hd_3110777.jpg");
+}
+
+.bb-collection{
+  grid-area: bb-collection;
+  display: flex;
+  flex-direction: row;
+  height: 420px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image: url("https://picserio.com/data/out/90/plain-black-wallpapers-hd_3110777.jpg");
+}
+
+.od-collection{
+  grid-area: od-collection;
+  display: flex;
+  flex-direction: row;
+  height: 420px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image: url("https://picserio.com/data/out/90/plain-black-wallpapers-hd_3110777.jpg");
+}
+
+.david-song1,.david-song2,.david-song3,.david-song4,.david-song5,
+.bb-song1,.bb-song2,.bb-song3,.bb-song4,.bb-song5,.bb-song6,.bb-song7,.bb-song8,.bb-song9,.bb-song10,
+.od-song1,.od-song2,.od-song3,.od-song4,.od-song5,.od-song6,.od-song7,.od-song8,.od-song9,.od-song10{
+  display: flex;
+  margin: 5px;
+  background-color: #e8ebef;
+  width:200px;
+  height: 200px;
+  border: 1px solid white;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+</style>
+<body>
+    <div class="header">
+            <div class="header">
+                    <a class="logo"><b>My SONGS Collection</b></a>
+                    <div class="header-right">
+                      <a href="#">English</a>
+                      <a href="hin-collection.html">Hindi</a>
+                      <a href="#">Punjabi</a>
+                    </div>
+            </div>
+    </div>
+  
+    <div class="header1">
+        <b>ENGLISH COLLECTION</b>                
+    </div>
+
+    <div class="container">
+    <div class="singer-header">
+      <b>David Guetta</b>                
+    </div>
+
+    <!-- DAVID GUETTA-->
+    <div class="david-collection">
+        <div class="david-song1">
+          <img src="https://directlyrics.com/img/upload/david-guetta-2u-single.jpg" alt="david-guetta-2u-single">
+        </div>
+        <div class="david-song2">
+          <img src="https://www.chorusonline.nl/images/content/cms_producten/944/foto_117_titanium__david_guetta_2_detail.jpg" alt="titanium_david_guetta">
+        </div>
+        <div class="david-song3">
+          <img src="https://i1.sndcdn.com/artworks-000027685436-qrnps7-t500x500.jpg" alt="i-can-only-imagine"> 
+        </div>
+        <div class="david-song4">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/WithoutYouDavidGuetta.jpg/220px-WithoutYouDavidGuetta.jpg" alt="WithoutYouDavidGuetta">  
+        </div>
+        <div class="david-song5">
+          <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Sexy_Bitch_cover.png" alt="Sexy_Bitch_cover">  
+        </div>
+    </div>
+  
+    <div class="singer-header2">
+      <b>Backstreet Boys</b>                
+    </div>
+
+    <!--BACKSTREET BOYS-->
+    <div class="bb-collection">
+      <div class="bb-song1">
+        <img src="https://i1.sndcdn.com/artworks-000139121458-4q291x-t500x500.jpg" alt="show-me-the-meaning">
+      </div>
+      <div class="bb-song2">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Everybody_%28Backstreet%27s_Back%29_%28Backstreet_Boys_single_-_cover_art%29.png/220px-Everybody_%28Backstreet%27s_Back%29_%28Backstreet_Boys_single_-_cover_art%29.png" alt="Everybody_Backstreet_Boys">
+      </div>
+      <div class="bb-song3">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/41ACMFJZDRL.jpg" alt="i-want-in-that-way"> 
+      </div>
+      <div class="bb-song4">
+        <img src="https://images.genius.com/65878ce9fa60da13e788504a89e4847e.600x600x1.jpg" alt="quit-playing-games">  
+      </div>
+      <div class="bb-song5">
+        <img src="https://darksideofbackstreet.files.wordpress.com/2016/10/iywitbgggyabb1.png" alt="if-u-want-to-good-girl">  
+      </div>
+      <div class="bb-song6">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/41P2N33CAGL.jpg" alt="shape-of-my-heart">  
+      </div>
+      <div class="bb-song7">
+        <img src="https://i.ytimg.com/vi/4RaZsOb2OJs/hqdefault.jpg" alt="straight-to-my-heart">  
+      </div>
+      <div class="bb-song8">
+        <img src="https://pbs.twimg.com/media/DqEN2MUUwAARvEN.jpg" alt="as-long-as">  
+      </div>
+      <div class="bb-song9">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/AnywhereForYou1.png/220px-AnywhereForYou1.png" alt="AnywhereForYou">  
+      </div>
+      <div class="bb-song10">
+        <img src="https://ksassets.timeincuk.net/wp/uploads/sites/55/2015/02/2015BackstreetBoys_ShowEmWhatYoureMadeOf_Film_230215.jpg" alt="show-em">  
+      </div>
+    </div>
+
+      <div class="singer-header3">
+        <b>One Direction</b>                
+      </div>
+  
+      <!--One Direction-->
+      <div class="od-collection">
+        <div class="od-song1">
+          <img src="https://is4-ssl.mzstatic.com/image/thumb/Music/v4/08/c1/12/08c11217-b36c-89c1-9d4d-4afa744ed845/859708612288_cover.jpg/268x0w.jpg" alt="what-makes-u-beautiful">
+        </div>
+        <div class="od-song2">
+          <img src="https://i.ytimg.com/vi/-pSUbrq84aE/maxresdefault.jpg" alt="rock-me">
+        </div>
+        <div class="od-song3">
+          <img src="https://static1.squarespace.com/static/5728a06459827e6e7a15844c/t/5a569f7a53450ad1024a2980/1515626431958/one_thing_hd.jpg?format=1500w" alt="one_thing"> 
+        </div>
+        <div class="od-song4">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/34/One_Direction_-_Drag_Me_Down_%28Official_Single_Cover%29.png/220px-One_Direction_-_Drag_Me_Down_%28Official_Single_Cover%29.png" alt="220px-One_Direction_-_Drag_Me_Down_%28Official_Single_Cover%29">  
+        </div>
+        <div class="od-song5">
+          <img src="https://darksideofbackstreet.files.wordpress.com/2016/10/iywitbgggyabb1.png" alt="if-u-want-to-good-girl">  
+        </div>
+        <div class="od-song6">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/41P2N33CAGL.jpg" alt="shape-of-my-heart">  
+        </div>
+        <div class="od-song7">
+          <img src="https://i.ytimg.com/vi/4RaZsOb2OJs/hqdefault.jpg" alt="straight-to-my-heart">  
+        </div>
+        <div class="od-song8">
+          <img src="https://pbs.twimg.com/media/DqEN2MUUwAARvEN.jpg" alt="as-long-as">  
+        </div>
+        <div class="od-song9">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/AnywhereForYou1.png/220px-AnywhereForYou1.png" alt="AnywhereForYou">  
+        </div>
+        <div class="od-song10">
+          <img src="https://ksassets.timeincuk.net/wp/uploads/sites/55/2015/02/2015BackstreetBoys_ShowEmWhatYoureMadeOf_Film_230215.jpg" alt="show-em">  
+        </div>
+  
+  </div>
+</div>
+ 
+</body>
+</html>
