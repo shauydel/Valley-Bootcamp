@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Changer</title>
+</head>
+<style>
+.square{
+    width:500px;
+    height: 500px;
+    background-color: yellow;
+}
+</style>
+<body>
+    <div class="square" onclick="change()"></div>
+
+<script>
+     let count = 0;
+    function change(){
+ 
+  switch(count % 3){
+  case 0:  document.getElementsByClassName("square")[0].style.backgroundColor="yellow";
+  ++count;
+  break; 
+
+  case 1: document.getElementsByClassName("square")[0].style.backgroundColor="green";
+  ++count;
+  break;
+
+  case 2: document.getElementsByClassName("square")[0].style.backgroundColor="blue";
+  ++count;
+  break;
+  }
+
+ 
+
+}
+</script>
+</body>
+</html>
